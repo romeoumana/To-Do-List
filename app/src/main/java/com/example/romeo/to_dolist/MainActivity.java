@@ -103,9 +103,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onRestoreInstanceState(Bundle bundle) {
         super.onRestoreInstanceState(bundle);
-
-        // load the clicks count and current image ID state
-//        if(entries == NULL){
+        
         Log.v("lifecycle", "onRestoreInstanceState was called");
 
         entries = bundle.getStringArrayList("entries");
